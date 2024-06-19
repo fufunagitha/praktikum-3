@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Buku</title>
+    <style>
+        /* Style untuk tampilan yang lebih menarik */
+        .label-inputan {
+            background-color: lavender;
+        }
+        .inputan {
+            color: black;
+            width: 300px;
+            border: solid salmon;
+            text-align: center;
+            background-color: mintcream;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: teal;
+            text-align: center;
+        }
+        .book {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: skyblue;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 400px;
+        }
+        .book img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .book h2 {
+            margin-top: 10px;
+            color: brown;
+        }
+        .book p {
+            color: black;
+        }
+        @media screen and (max-width: 1000px) {
+            .container {
+             padding: 2%;
+             display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <img src="Analisa-dan-Perancangan_Eva-Argarini_-rev-1.0-depan.jpg" alt="Buku 1">
+        <h2>Analisa Perancangan SI</h2>
+        <p>Buku ini didesain untuk mempelajari, menganalisis, maupun merancang tentang sistem dan sistem informasi</p>
+    </div>
+    <div class="book">
+        <img src="9786020499659_COV_Belajar_C.jpg" alt="Buku 2">
+        <h2>Belajar Coding</h2>
+        <p>Buku ini berisi algoritma-algoritma coding dengan lengkap dan terperinci</p>
+    </div>
+    <div class="book">
+        <img src="WhatsApp Image 2024-04-14 at 19.24.06.jpeg" alt="Buku 3">
+        <h2>Ini Aheng Bukan Dilan</h2>
+        <p>Buku ini adalah novel remaja yang menceritakan tentang kehidupan seorang anak laki laki yang penuh dengan kesedihan dibalik tawanya</p>
+    </div>
+    <div class="book">
+        <div style="width: 400px;" class="card">
+            <div class="title">
+              <h1 class="judul">
+                Form <span style="color: crimson"> Penilaian</span> 
+              </h1>
+        <form method="POST" action="post.php">
+            <div class="label-inputan">
+                  <label class="label">Nama:</label><br>
+                  <input class="inputan" placeholder="Masukkan nama" name="nama" type="text"/><br>
+            </div>
+            <div class="label-inputan">
+                  <label class="label">Email:</label><br>
+                  <input class="inputan" placeholder="Masukkan email" name="email" type="text"/><br>
+            </div>
+            <div class="label-inputan">
+                  <label class="label">Komentar:</label><br>
+                  <input class="inputan" placeholder="Masukkan Komentar" name="komentar" type="text"/><br>
+            <input type="submit" name="submit" value="submit">
+            </div>
+    </div>
+</body>
+</html>
